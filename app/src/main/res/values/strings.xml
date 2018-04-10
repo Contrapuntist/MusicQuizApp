@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MusicQuizApp</string>
+    <string name="app_title">Classical Music Trivia</string>
+    <string name="app_subtitle">How well do you know your composers?</string>
+    <string name="submit">Submit Answers</string>
+    <string name="question_one">1) What 19th century composer wrote the tone poem "Symphonie fantastique?"</string>
+    <string name="liszt">Franz Liszt</string>
+    <string name="berlioz">Hector Berlioz</string>
+    <string name="schubert">Franz Schubert</string>
+    <string name="beethoven">Ludwig van Beethoven</string>
+    <string name="question_two">2) Pianist Clara Schumann, wife of Robert Schumann, allegedly had an affair with which other composer?</string>
+    <string name="brahms">Johannes Brahms</string>
+    <string name="wagner">Robert Wagner</string>
+    <string name="r_strauss">Richard Strauss</string>
+    <string name="question_three">3) What ballet by Igor Stravinsky caused a riot at its premiere?</string>
+    <string name="firebird">"L'Oiseau de feu" (The Firebird)</string>
+    <string name="rite_of_spring">Rite of Spring</string>
+    <string name="romeo_juliet">Romeo and Juliet</string>
+    <string name="faun">L\'apres-midi d\'un Faune (Afternoon of a Faun)</string>
+    <string name="question_four">4) Beethoven\'s 3rd symphony originally dedicated to what military leader before he changed it to "Eroica"?</string>
+    <string name="napoleon">Napoléon Bonaparte</string>
+    <string name="washington">George Washington</string>
+    <string name="alexander">Alexander the Great</string>
+    <string name="lafayette">Marquis de Lafayette</string>
+    <string name="question_five">5) Johann Sebastian Bach is now considered one of the greatest composers. But it wasn\'t until Felix Mendolssohn arranged for a performance of this work that Bach that he received his success?</string>
+    <string name="brandenburg">Brandenburg Concertos</string>
+    <string name="saint_john_passion">St. John Passion</string>
+    <string name="goldberg">Goldberg Variations</string>
+    <string name="tempered">The Well-Tempered Clavier</string>
+    <string name="matthew_passion">Matthew Passion</string>
+
+</resources>
