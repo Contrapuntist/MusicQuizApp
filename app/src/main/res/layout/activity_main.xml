@@ -17,31 +17,31 @@
                 android:id="@+id/violin_thumb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/violin_thumb"/>
+                android:src="@drawable/violin_thumb" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
                 android:orientation="vertical"
-                android:paddingTop="4dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
-                android:background="@color/colorPrimary">
+                android:paddingTop="4dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="32sp"
                     android:fontFamily="@font/quicksand_bold"
-                    android:text="@string/app_title" />
+                    android:text="@string/app_title"
+                    android:textSize="32sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:textSize="18sp"
                     android:fontFamily="@font/quicksand_medium"
-                    android:text="@string/app_subtitle"/>
+                    android:text="@string/app_subtitle"
+                    android:textSize="18sp" />
 
             </LinearLayout>
         </LinearLayout>
@@ -51,68 +51,68 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginTop="8dp"
-            android:padding="16dp" >
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/quicksand_medium"
+                android:text="@string/question_one"
                 android:textColor="#212121"
-                android:textSize="22sp"
-                android:text="@string/question_one" />
+                android:textSize="22sp" />
 
             <RadioGroup
                 android:id="@+id/question_one_answer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
 
                 <RadioButton
                     android:id="@+id/question_one_answer_a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/schubert"
                     android:textColor="#212121"
-                    android:textSize="22dp"
-                    android:text="@string/schubert"/>
+                    android:textSize="22dp" />
 
                 <RadioButton
                     android:id="@+id/question_one_answer_b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/liszt"
                     android:textColor="#212121"
-                    android:textSize="22sp"
-                    android:text="@string/liszt"/>
+                    android:textSize="22sp" />
 
                 <RadioButton
                     android:id="@+id/question_one_answer_c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/berlioz"
                     android:textColor="#212121"
-                    android:textSize="22sp"
-                    android:text="@string/berlioz"/>
+                    android:textSize="22sp" />
 
                 <RadioButton
                     android:id="@+id/question_one_answer_d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/beethoven"
                     android:textColor="#212121"
-                    android:textSize="22sp"
-                    android:text="@string/beethoven"/>
+                    android:textSize="22sp" />
 
             </RadioGroup>
         </LinearLayout>
@@ -121,66 +121,66 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp" >
+            android:padding="16dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/quicksand_medium"
+                android:text="@string/question_two"
                 android:textColor="#212121"
-                android:textSize="22sp"
-                android:text="@string/question_two" />
+                android:textSize="22sp" />
 
             <RadioGroup
                 android:id="@+id/question_two_answer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
 
                 <RadioButton
                     android:id="@+id/question_two_answer_a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/liszt"
                     android:textColor="#212121"
-                    android:textSize="22sp"
-                    android:text="@string/liszt"/>
+                    android:textSize="22sp" />
 
                 <RadioButton
                     android:id="@+id/question_two_answer_b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/wagner"
                     android:textColor="#212121"
-                    android:textSize="22sp"
-                    android:text="@string/wagner"/>
+                    android:textSize="22sp" />
 
                 <RadioButton
                     android:id="@+id/question_two_answer_c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/brahms"
                     android:textColor="#212121"
-                    android:textSize="22sp"
-                    android:text="@string/brahms"/>
+                    android:textSize="22sp" />
 
                 <RadioButton
                     android:id="@+id/question_two_answer_d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/r_strauss"
                     android:textColor="#212121"
-                    android:textSize="22sp"
-                    android:text="@string/r_strauss"/>
+                    android:textSize="22sp" />
             </RadioGroup>
         </LinearLayout>
 
@@ -189,66 +189,66 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp" >
+            android:padding="16dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/quicksand_medium"
+                android:text="@string/question_three"
                 android:textColor="#212121"
-                android:textSize="22sp"
-                android:text="@string/question_three" />
+                android:textSize="22sp" />
 
             <RadioGroup
                 android:id="@+id/question_three_answer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
 
                 <RadioButton
                     android:id="@+id/question_three_answer_a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/faun"
                     android:textColor="#212121"
-                    android:textSize="22sp"
-                    android:text="@string/faun"/>
+                    android:textSize="22sp" />
 
                 <RadioButton
                     android:id="@+id/question_three_answer_b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/rite_of_spring"
                     android:textColor="#212121"
-                    android:textSize="22sp"
-                    android:text="@string/rite_of_spring"/>
+                    android:textSize="22sp" />
 
                 <RadioButton
                     android:id="@+id/question_three_answer_c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/romeo_juliet"
                     android:textColor="#212121"
-                    android:textSize="22sp"
-                    android:text="@string/romeo_juliet"/>
+                    android:textSize="22sp" />
 
                 <RadioButton
                     android:id="@+id/question_three_answer_d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/firebird"
                     android:textColor="#212121"
-                    android:textSize="22sp"
-                    android:text="@string/firebird"/>
+                    android:textSize="22sp" />
             </RadioGroup>
         </LinearLayout>
         <!--Question 4-->
@@ -256,66 +256,66 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp" >
+            android:padding="16dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/quicksand_medium"
+                android:text="@string/question_four"
                 android:textColor="#212121"
-                android:textSize="22sp"
-                android:text="@string/question_four" />
+                android:textSize="22sp" />
 
             <RadioGroup
                 android:id="@+id/question_four_answer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
 
                 <RadioButton
                     android:id="@+id/question_four_answer_a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/lafayette"
                     android:textColor="#212121"
-                    android:textSize="22sp"
-                    android:text="@string/lafayette"/>
+                    android:textSize="22sp" />
 
                 <RadioButton
                     android:id="@+id/question_four_answer_b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/alexander"
                     android:textColor="#212121"
-                    android:textSize="22sp"
-                    android:text="@string/alexander"/>
+                    android:textSize="22sp" />
 
                 <RadioButton
                     android:id="@+id/question_four_answer_c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/washington"
                     android:textColor="#212121"
-                    android:textSize="22sp"
-                    android:text="@string/washington"/>
+                    android:textSize="22sp" />
 
                 <RadioButton
                     android:id="@+id/question_four_answer_d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/napoleon"
                     android:textColor="#212121"
-                    android:textSize="22sp"
-                    android:text="@string/napoleon"/>
+                    android:textSize="22sp" />
             </RadioGroup>
         </LinearLayout>
         <!--Question 5-->
@@ -323,87 +323,192 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp" >
+            android:padding="16dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/quicksand_medium"
+                android:text="@string/question_five"
                 android:textColor="#212121"
-                android:textSize="22sp"
-                android:text="@string/question_five" />
+                android:textSize="22sp" />
 
             <RadioGroup
                 android:id="@+id/question_five_answer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
 
                 <RadioButton
                     android:id="@+id/question_five_answer_a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/matthew_passion"
                     android:textColor="#212121"
-                    android:textSize="22sp"
-                    android:text="@string/matthew_passion"/>
+                    android:textSize="22sp" />
 
                 <RadioButton
                     android:id="@+id/question_five_answer_b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/brandenburg"
                     android:textColor="#212121"
-                    android:textSize="22sp"
-                    android:text="@string/brandenburg"/>
+                    android:textSize="22sp" />
 
                 <RadioButton
                     android:id="@+id/question_five_answer_c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/saint_john_passion"
                     android:textColor="#212121"
-                    android:textSize="22sp"
-                    android:text="@string/saint_john_passion"/>
+                    android:textSize="22sp" />
 
                 <RadioButton
                     android:id="@+id/question_five_answer_d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
-                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/tempered"
                     android:textColor="#212121"
-                    android:textSize="22sp"
-                    android:text="@string/tempered"/>
+                    android:textSize="22sp" />
             </RadioGroup>
+        </LinearLayout>
+
+        <!--Question 6-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/question_six"
+                android:textColor="#212121"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/haydn_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/haydn_hint" />
+
+        </LinearLayout>
+        <!--Question 7-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/question_seven"
+                android:textColor="#212121"
+                android:textSize="22sp" />
+
+            <CheckBox
+                android:id="@+id/giovanni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:buttonTint="@color/colorAccent"
+                android:fontFamily="@font/quicksand_regular"
+                android:paddingLeft="12dp"
+                android:text="@string/giovanni"
+                android:textSize="22sp" />
+
+            <CheckBox
+                android:id="@+id/boheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:buttonTint="@color/colorAccent"
+                android:fontFamily="@font/quicksand_regular"
+                android:paddingLeft="12dp"
+                android:text="@string/boheme"
+                android:textSize="22sp" />
+
+            <CheckBox
+                android:id="@+id/mad_butterfly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:buttonTint="@color/colorAccent"
+                android:fontFamily="@font/quicksand_regular"
+                android:paddingLeft="12dp"
+                android:text="@string/butterfly"
+                android:textSize="22sp" />
+
+            <CheckBox
+                android:id="@+id/carmen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:buttonTint="@color/colorAccent"
+                android:fontFamily="@font/quicksand_regular"
+                android:paddingLeft="12dp"
+                android:text="@string/carmen"
+                android:textSize="22sp" />
+
+            <CheckBox
+                android:id="@+id/rigoletto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:buttonTint="@color/colorAccent"
+                android:fontFamily="@font/quicksand_regular"
+                android:paddingLeft="12dp"
+                android:text="@string/rigoletto"
+                android:textSize="22sp" />
+
+            <CheckBox
+                android:id="@+id/tosca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:buttonTint="@color/colorAccent"
+                android:fontFamily="@font/quicksand_regular"
+                android:paddingLeft="12dp"
+                android:text="@string/tosca"
+                android:textSize="22sp" />
+
         </LinearLayout>
         <!-- Submit Button -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_gravity="center" >
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp">
 
             <Button
                 android:id="@+id/submit_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="32dp"
-                android:paddingRight="32dp"
+                android:layout_centerInParent="true"
                 android:layout_marginBottom="64dp"
                 android:background="@color/colorAccent"
-                android:textColor="#ffffff"
-                android:text="Submit"
                 android:onClick="getAnswers"
-                android:layout_centerInParent="true"/>
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="@string/submit"
+                android:textColor="#ffffff" />
         </RelativeLayout>
 
     </LinearLayout>

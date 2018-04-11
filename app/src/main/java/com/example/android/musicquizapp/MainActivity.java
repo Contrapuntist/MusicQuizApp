@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -71,21 +73,50 @@ public class MainActivity extends AppCompatActivity {
                 Log.i("MainActivity", "Question 4 Answer: " + answerQ4);
                 Log.i("MainActivity", "Question 5 Answer: " + answerQ5);
 
-                showResultsToast(totalCorrectAnswers(answerQ1, answerQ2, answerQ3, answerQ4, answerQ5));
+                showResultsToast(totalCorrectAnswers(answerQ1, answerQ2, answerQ3, answerQ4, answerQ5, haydnResponse(), pucinniOperaTally()));
             }
         });
     }
 
-    private void getQuizAnswers (){
+    private String haydnResponse () {
 
-    }
+        EditText getHaydnResponse = (EditText) findViewById(R.id.haydn_answer);
+        String haydnAnswer = getHaydnResponse.getText().toString();
 
-    public int totalCorrectAnswers (String answerToQ1, String answerToQ2, String answerToQ3, String answerToQ4, String answerToQ5) {
+        return haydnAnswer;
+    };
+
+    private int pucinniOperaTally () {
+        int checkBoxScore = 0;
+
+        CheckBox getBoheme = (CheckBox) findViewById(R.id.boheme);
+        CheckBox getButterfly = (CheckBox) findViewById(R.id.mad_butterfly);
+        CheckBox getCarmen = (CheckBox) findViewById(R.id.carmen);
+        CheckBox getGiovanni = (CheckBox) findViewById(R.id.giovanni);
+        CheckBox getTosca = (CheckBox) findViewById(R.id.tosca);
+        CheckBox getRigolleto = (CheckBox) findViewById(R.id.rigoletto);
+
+        boolean isBohemeChecked = getBoheme.isChecked();
+        boolean isButterflyChecked = getButterfly.isChecked();
+        boolean isCarmenChecked = getCarmen.isChecked();
+        boolean isToscaChecked = getTosca.isChecked();
+        boolean isRigolletoChecked = getRigolleto.isChecked();
+        boolean isGiovanniChecked = getGiovanni.isChecked();
+
+        if (isBohemeChecked && isButterflyChecked && isToscaChecked && !isCarmenChecked && !isRigolletoChecked && !isGiovanniChecked) {
+            checkBoxScore++;
+        }
+
+        return checkBoxScore;
+    };
+
+    public int totalCorrectAnswers (String answerToQ1, String answerToQ2, String answerToQ3, String answerToQ4, String answerToQ5, String answerToQ6, int checkboxScore) {
         String q1CorrectAnswer = "Hector Berlioz";
         String q2CorrectAnswer = "Johannes Brahms";
         String q3CorrectAnswer = "Rite of Spring";
         String q4CorrectAnswer = "Napoléon Bonaparte";
         String q5CorrectAnswer = "Matthew Passion";
+        String q6CorrectAnswer = "107";
 
         int totalCount = 0;
 
@@ -109,19 +140,22 @@ public class MainActivity extends AppCompatActivity {
             totalCount+= 1;
         }
 
-        Log.i("MainActivity", "Total Correct:" + totalCount);
-        return totalCount;
+        if (q6CorrectAnswer.equals(answerToQ6)) {
+            totalCount+= 1;
+        }
+
+        return totalCount + checkboxScore;
     }
 
     private void showResultsToast(int totalCorrect) {
         String resultsMessage = "";
 
-        if (totalCorrect == 5 ) {
-            resultsMessage = "You answered 5/5 questions correctly. That's a perfect score!!";
-        } else if (totalCorrect > 2 ) {
-            resultsMessage = "You answered " + totalCorrect + "/5 correctly. Not bad! ";
+        if (totalCorrect == 7 ) {
+            resultsMessage = "You answered 7/7 questions correctly. That's a perfect score!!";
+        } else if (totalCorrect > 3 ) {
+            resultsMessage = "You answered " + totalCorrect + "/7 correctly. Not bad! ";
         } else {
-            resultsMessage = "You answered " + totalCorrect + "/5 correctly. Come on. You can do better!";
+            resultsMessage = "You answered " + totalCorrect + "/7 correctly. Come on. You can do better!";
         }
 
         Toast.makeText(getApplicationContext(), resultsMessage, Toast.LENGTH_LONG).show();

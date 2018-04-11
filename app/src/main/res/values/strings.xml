@@ -28,5 +28,13 @@
     <string name="goldberg">Goldberg Variations</string>
     <string name="tempered">The Well-Tempered Clavier</string>
     <string name="matthew_passion">Matthew Passion</string>
-
+    <string name="question_six">6) How many symphonies in total did Joseph Haydn compose?</string>
+    <string name="haydn_hint">Insert Number</string>
+    <string name="question_seven">7) Choose the three operas composed by Giacomo Puccini.</string>
+    <string name="boheme">La Bohème</string>
+    <string name="tosca">Tosca</string>
+    <string name="giovanni">Don Giovanni</string>
+    <string name="carmen">Carmen</string>
+    <string name="rigoletto">Rigoletto</string>
+    <string name="butterfly">Madama Butterfly</string>
 </resources>
