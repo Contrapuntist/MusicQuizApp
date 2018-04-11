@@ -2,7 +2,6 @@ package com.example.android.musicquizapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -119,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return checkBoxScore;
-    };
+    }
 
     /**
      * This method evaluates the responses by the user to determine the number of correct answers
