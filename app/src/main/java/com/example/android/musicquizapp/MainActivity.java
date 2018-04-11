@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton questionFourAnswer;
     private RadioButton questionFiveAnswer;
 
-    public Button submitBtn;
+    private Button submitBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

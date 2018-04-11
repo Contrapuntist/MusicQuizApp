@@ -33,7 +33,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/quicksand_bold"
                     android:text="@string/app_title"
-                    android:textSize="@dimen/title_text_size" />
+                    android:textSize="@dimen/title_text_size"
+                    android:textColor="@color/textPrimary"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -41,7 +42,8 @@
                     android:layout_marginTop="@dimen/fourDP"
                     android:fontFamily="@font/quicksand_medium"
                     android:text="@string/app_subtitle"
-                    android:textSize="@dimen/subtitle_text_size" />
+                    android:textSize="@dimen/subtitle_text_size"
+                    android:textColor="@color/textPrimary"/>
 
             </LinearLayout>
         </LinearLayout>
@@ -60,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/quicksand_medium"
                 android:text="@string/question_one"
-                android:textColor="#212121"
+                android:textColor="@color/textPrimary"
                 android:textSize="@dimen/question_text_size" />
 
             <RadioGroup
@@ -78,7 +80,7 @@
                     android:paddingLeft="@dimen/eightDP"
                     android:paddingRight="@dimen/eightDP"
                     android:text="@string/schubert"
-                    android:textColor="#212121"
+                    android:textColor="@color/textPrimary"
                     android:textSize="@dimen/answer_text_size" />
 
                 <RadioButton
@@ -89,7 +91,7 @@
                     android:paddingLeft="@dimen/eightDP"
                     android:paddingRight="@dimen/eightDP"
                     android:text="@string/liszt"
-                    android:textColor="#212121"
+                    android:textColor="@color/textPrimary"
                     android:textSize="@dimen/answer_text_size" />
 
                 <RadioButton
@@ -100,7 +102,7 @@
                     android:paddingLeft="@dimen/eightDP"
                     android:paddingRight="@dimen/eightDP"
                     android:text="@string/berlioz"
-                    android:textColor="#212121"
+                    android:textColor="@color/textPrimary"
                     android:textSize="@dimen/answer_text_size" />
 
                 <RadioButton
@@ -111,7 +113,7 @@
                     android:paddingLeft="@dimen/eightDP"
                     android:paddingRight="@dimen/eightDP"
                     android:text="@string/beethoven"
-                    android:textColor="#212121"
+                    android:textColor="@color/textPrimary"
                     android:textSize="@dimen/answer_text_size" />
 
             </RadioGroup>
@@ -128,7 +130,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/quicksand_medium"
                 android:text="@string/question_two"
-                android:textColor="#212121"
+                android:textColor="@color/textPrimary"
                 android:textSize="@dimen/question_text_size" />
 
             <RadioGroup
@@ -146,7 +148,7 @@
                     android:paddingLeft="@dimen/eightDP"
                     android:paddingRight="@dimen/eightDP"
                     android:text="@string/liszt"
-                    android:textColor="#212121"
+                    android:textColor="@color/textPrimary"
                     android:textSize="@dimen/answer_text_size" />
 
                 <RadioButton
@@ -157,7 +159,7 @@
                     android:paddingLeft="@dimen/eightDP"
                     android:paddingRight="@dimen/eightDP"
                     android:text="@string/wagner"
-                    android:textColor="#212121"
+                    android:textColor="@color/textPrimary"
                     android:textSize="@dimen/answer_text_size" />
 
                 <RadioButton
@@ -168,7 +170,7 @@
                     android:paddingLeft="@dimen/eightDP"
                     android:paddingRight="@dimen/eightDP"
                     android:text="@string/brahms"
-                    android:textColor="#212121"
+                    android:textColor="@color/textPrimary"
                     android:textSize="@dimen/answer_text_size" />
 
                 <RadioButton
@@ -196,7 +198,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/quicksand_medium"
                 android:text="@string/question_three"
-                android:textColor="#212121"
+                android:textColor="@color/textPrimary"
                 android:textSize="@dimen/question_text_size" />
 
             <RadioGroup
@@ -211,10 +213,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/quicksand_regular"
-                    android:paddingLeft="8dp"
-                    android:paddingRight="8dp"
+                    android:paddingLeft="@dimen/eightDP"
+                    android:paddingRight="@dimen/eightDP"
                     android:text="@string/faun"
-                    android:textColor="#212121"
+                    android:textColor="@color/textPrimary"
                     android:textSize="@dimen/answer_text_size" />
 
                 <RadioButton
@@ -225,7 +227,7 @@
                     android:paddingLeft="@dimen/eightDP"
                     android:paddingRight="@dimen/eightDP"
                     android:text="@string/rite_of_spring"
-                    android:textColor="#212121"
+                    android:textColor="@color/textPrimary"
                     android:textSize="@dimen/answer_text_size" />
 
                 <RadioButton
@@ -236,7 +238,7 @@
                     android:paddingLeft="@dimen/eightDP"
                     android:paddingRight="@dimen/eightDP"
                     android:text="@string/romeo_juliet"
-                    android:textColor="#212121"
+                    android:textColor="@color/textPrimary"
                     android:textSize="@dimen/answer_text_size" />
 
                 <RadioButton
@@ -247,8 +249,8 @@
                     android:paddingLeft="@dimen/eightDP"
                     android:paddingRight="@dimen/eightDP"
                     android:text="@string/firebird"
-                    android:textColor="#212121"
-                    android:textSize="22sp" />
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/answer_text_size" />
             </RadioGroup>
         </LinearLayout>
         <!--Question 4-->
@@ -263,7 +265,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/quicksand_medium"
                 android:text="@string/question_four"
-                android:textColor="#212121"
+                android:textColor="@color/textPrimary"
                 android:textSize="@dimen/question_text_size" />
 
             <RadioGroup
@@ -281,7 +283,7 @@
                     android:paddingLeft="@dimen/eightDP"
                     android:paddingRight="@dimen/eightDP"
                     android:text="@string/lafayette"
-                    android:textColor="#212121"
+                    android:textColor="@color/textPrimary"
                     android:textSize="@dimen/answer_text_size" />
 
                 <RadioButton
@@ -292,7 +294,7 @@
                     android:paddingLeft="@dimen/eightDP"
                     android:paddingRight="@dimen/eightDP"
                     android:text="@string/alexander"
-                    android:textColor="#212121"
+                    android:textColor="@color/textPrimary"
                     android:textSize="@dimen/answer_text_size" />
 
                 <RadioButton
@@ -303,7 +305,7 @@
                     android:paddingLeft="@dimen/eightDP"
                     android:paddingRight="@dimen/eightDP"
                     android:text="@string/washington"
-                    android:textColor="#212121"
+                    android:textColor="@color/textPrimary"
                     android:textSize="@dimen/answer_text_size" />
 
                 <RadioButton
@@ -314,7 +316,7 @@
                     android:paddingLeft="@dimen/eightDP"
                     android:paddingRight="@dimen/eightDP"
                     android:text="@string/napoleon"
-                    android:textColor="#212121"
+                    android:textColor="@color/textPrimary"
                     android:textSize="@dimen/answer_text_size" />
             </RadioGroup>
         </LinearLayout>
@@ -330,7 +332,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/quicksand_medium"
                 android:text="@string/question_five"
-                android:textColor="#212121"
+                android:textColor="@color/textPrimary"
                 android:textSize="@dimen/question_text_size" />
 
             <RadioGroup
@@ -348,7 +350,7 @@
                     android:paddingLeft="@dimen/eightDP"
                     android:paddingRight="@dimen/eightDP"
                     android:text="@string/matthew_passion"
-                    android:textColor="#212121"
+                    android:textColor="@color/textPrimary"
                     android:textSize="@dimen/answer_text_size" />
 
                 <RadioButton
@@ -359,7 +361,7 @@
                     android:paddingLeft="@dimen/eightDP"
                     android:paddingRight="@dimen/eightDP"
                     android:text="@string/brandenburg"
-                    android:textColor="#212121"
+                    android:textColor="@color/textPrimary"
                     android:textSize="@dimen/answer_text_size" />
 
                 <RadioButton
@@ -370,7 +372,7 @@
                     android:paddingLeft="@dimen/eightDP"
                     android:paddingRight="@dimen/eightDP"
                     android:text="@string/saint_john_passion"
-                    android:textColor="#212121"
+                    android:textColor="@color/textPrimary"
                     android:textSize="@dimen/answer_text_size" />
 
                 <RadioButton
@@ -381,7 +383,7 @@
                     android:paddingLeft="@dimen/eightDP"
                     android:paddingRight="@dimen/eightDP"
                     android:text="@string/tempered"
-                    android:textColor="#212121"
+                    android:textColor="@color/textPrimary"
                     android:textSize="@dimen/answer_text_size" />
             </RadioGroup>
         </LinearLayout>
@@ -398,7 +400,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/quicksand_medium"
                 android:text="@string/question_six"
-                android:textColor="#212121"
+                android:textColor="@color/textPrimary"
                 android:textSize="@dimen/question_text_size" />
 
             <EditText
@@ -421,7 +423,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/quicksand_medium"
                 android:text="@string/question_seven"
-                android:textColor="#212121"
+                android:textColor="@color/textPrimary"
                 android:textSize="@dimen/question_text_size" />
 
             <CheckBox
