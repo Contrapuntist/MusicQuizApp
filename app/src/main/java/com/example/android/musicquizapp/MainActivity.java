@@ -89,12 +89,12 @@ public class MainActivity extends AppCompatActivity {
     private int pucinniOperaTally () {
         int checkBoxScore = 0;
 
-        CheckBox getBoheme = (CheckBox) findViewById(R.id.boheme);
-        CheckBox getButterfly = (CheckBox) findViewById(R.id.mad_butterfly);
-        CheckBox getCarmen = (CheckBox) findViewById(R.id.carmen);
-        CheckBox getGiovanni = (CheckBox) findViewById(R.id.giovanni);
-        CheckBox getTosca = (CheckBox) findViewById(R.id.tosca);
-        CheckBox getRigolleto = (CheckBox) findViewById(R.id.rigoletto);
+        CheckBox getBoheme = findViewById(R.id.boheme);
+        CheckBox getButterfly = findViewById(R.id.mad_butterfly);
+        CheckBox getCarmen = findViewById(R.id.carmen);
+        CheckBox getGiovanni = findViewById(R.id.giovanni);
+        CheckBox getTosca = findViewById(R.id.tosca);
+        CheckBox getRigolleto = findViewById(R.id.rigoletto);
 
         boolean isBohemeChecked = getBoheme.isChecked();
         boolean isButterflyChecked = getButterfly.isChecked();
@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showResultsToast(int totalCorrect) {
-        String resultsMessage = "";
+        String resultsMessage;
 
         if (totalCorrect == 7 ) {
             resultsMessage = "You answered 7/7 questions correctly. That's a perfect score!!";
