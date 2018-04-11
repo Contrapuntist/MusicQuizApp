@@ -13,6 +13,10 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    /**
+     * Global variables. One variable establish for each RadioGroup and RadioButton
+     * to store selected value
+     */
     private RadioGroup questionOneGroup;
     private RadioGroup questionTwoGroup;
     private RadioGroup questionThreeGroup;
@@ -25,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton questionFourAnswer;
     private RadioButton questionFiveAnswer;
 
-    private Button submitBtn;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +37,11 @@ public class MainActivity extends AppCompatActivity {
         addListenerOnButton();
     }
 
+
+    /**
+     * This method adds listener to submit button, which then retrieves the answers
+     * provided by the user.
+     */
     public void addListenerOnButton() {
         questionOneGroup = findViewById(R.id.question_one_answer);
         questionTwoGroup = findViewById(R.id.question_two_answer);
@@ -42,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         questionFourGroup = findViewById(R.id.question_four_answer);
         questionFiveGroup = findViewById(R.id.question_five_answer);
 
-        submitBtn = findViewById(R.id.submit_btn);
+        Button submitBtn = findViewById(R.id.submit_btn);
 
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,16 +74,15 @@ public class MainActivity extends AppCompatActivity {
                 String answerQ4 = (String) questionFourAnswer.getText();
                 String answerQ5 = (String) questionFiveAnswer.getText();
 
-                Log.i("MainActivity", "Question 1 Answer: " + answerQ1);
-                Log.i("MainActivity", "Question 2 Answer: " + answerQ2);
-                Log.i("MainActivity", "Question 3 Answer: " + answerQ3);
-                Log.i("MainActivity", "Question 4 Answer: " + answerQ4);
-                Log.i("MainActivity", "Question 5 Answer: " + answerQ5);
-
                 showResultsToast(totalCorrectAnswers(answerQ1, answerQ2, answerQ3, answerQ4, answerQ5, haydnResponse(), pucinniOperaTally()));
             }
         });
     }
+
+    /**
+     * This method retrieves value of name from EditText view associated with
+     * question about Joseph Haydn
+     */
 
     private String haydnResponse () {
 
@@ -85,6 +91,11 @@ public class MainActivity extends AppCompatActivity {
 
         return haydnAnswer;
     };
+
+    /**
+     * This method evaluates question seven and determines if a point should be awarded
+     * for choosing the correct answers
+     */
 
     private int pucinniOperaTally () {
         int checkBoxScore = 0;
@@ -109,6 +120,20 @@ public class MainActivity extends AppCompatActivity {
 
         return checkBoxScore;
     };
+
+    /**
+     * This method evaluates the responses by the user to determine the number of correct answers
+     * and returns the total number correct.
+     *
+     * @param answerToQ1 Answer to question 1
+     * @param answerToQ2 Answer to question 2
+     * @param answerToQ3 Answer to question 3
+     * @param answerToQ4 Answer to question 4
+     * @param answerToQ5 Answer to question 5
+     * @param answerToQ6 Calls method to provide answer to question 6 about Joseph Haydn
+     * @param checkboxScore calls method to that returns value of checkbox question; will
+     * return 0 or 1
+     */
 
     public int totalCorrectAnswers (String answerToQ1, String answerToQ2, String answerToQ3, String answerToQ4, String answerToQ5, String answerToQ6, int checkboxScore) {
         String q1CorrectAnswer = "Hector Berlioz";
@@ -147,6 +172,10 @@ public class MainActivity extends AppCompatActivity {
         return totalCount + checkboxScore;
     }
 
+    /**
+     * This method evaluates the total correct responses to determine what message to present
+     * in the Toast
+     */
     private void showResultsToast(int totalCorrect) {
         String resultsMessage;
 
