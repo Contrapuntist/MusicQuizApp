@@ -510,7 +510,7 @@
                 android:paddingLeft="@dimen/btn_padding"
                 android:paddingRight="@dimen/btn_padding"
                 android:text="@string/submit"
-                android:textColor="#ffffff" />
+                android:textColor="@color/whiteText" />
         </RelativeLayout>
 
     </LinearLayout>
